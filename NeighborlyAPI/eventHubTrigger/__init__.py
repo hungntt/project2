@@ -1,20 +1,19 @@
 import json
 import logging
+
 import azure.functions as func
 
 
-def main(event: func.EventGridEvent):
-    logging.info('Function triggered to process a message: ', event.get_body())
-    logging.info('  EnqueuedTimeUtc =', event.enqueued_time)
-    logging.info('  SequenceNumber =', event.sequence_number)
-    logging.info('  Offset =', event.offset)
+def main(event: func.EventHubEvent):
+    body = event.get_body().decode()
+    logging.info(f"Function triggered to process a message: {body}")
+    logging.info(f"  EnqueuedTimeUtc = {event.enqueued_time}")
+    logging.info(f"  SequenceNumber = {event.sequence_number}")
+    logging.info(f"  Offset = {event.offset}")
 
-    result = json.dumps({
-        'id': event.id,
-        'data': event.get_json(),
-        'topic': event.topic,
-        'subject': event.subject,
-        'event_type': event.event_type,
-    })
+    result = json.loads(body)
+    logging.info("Python EventGrid trigger processed an event: {}".format(result))
 
-    logging.info('Python EventGrid trigger processed an event: %s', result)
+    # Metadata
+    for key in event.metadata:
+        logging.info(f"Metadata: {key} = {event.metadata[key]}")

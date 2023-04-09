@@ -2,11 +2,11 @@
   "scriptFile": "__init__.py",
   "bindings": [
     {
-      "type": "eventGridTrigger",
+      "type": "eventHubTrigger",
       "name": "event",
       "direction": "in",
-	  "eventHubName": "hungntt-nsp", 
-	  "connection": "Endpoint=sb://hungntt-nsp.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=wAYMj/3mS2k8kl+1VA/hic66IA0blqvje+AEhAFbCTg="
+      "eventHubName": "hungntt-hub",
+      "connection": "Endpoint=sb://hungntt-nsp.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=oJAw72zgXI9hYqAEt0YAeK2IWZ1bJZlZr+AEhIh9nF0="
     }
   ]
 }

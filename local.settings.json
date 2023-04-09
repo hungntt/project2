@@ -8,7 +8,7 @@
     "MongoDBName": "hungntt-db",
     "APPINSIGHTS_INSTRUMENTATIONKEY": "0afc797b-1daa-4eec-af61-c84f26b06f10",
     "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=0afc797b-1daa-4eec-af61-c84f26b06f10;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/",
-    "EventHubConnString":"Endpoint=sb://hungntt-nsp.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=wAYMj/3mS2k8kl+1VA/hic66IA0blqvje+AEhAFbCTg="
+    "EventHubConnString":"Endpoint=sb://hungntt-nsp.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=oJAw72zgXI9hYqAEt0YAeK2IWZ1bJZlZr+AEhIh9nF0="
   },
   "ConnectionStrings": {}
 }
