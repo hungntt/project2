@@ -1,9 +1,14 @@
 {
-  "IsEncrypted": true,
+  "IsEncrypted": false,
   "Values": {
-    "FUNCTIONS_WORKER_RUNTIME": "CfDJ8KvJ6DmYyMJCgkPKMHi9yggxobSNL+EiBudqjTbkN08MV8FPGx7WqKyJXi1vK5/3O48YnxQvGjJtBiH2gbzh8qUxrA2On+1JRf1xQeWwdKwATocSwT1CMT9SN2gtzXs0ZQ=="
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "FUNCTIONS_EXTENSION_VERSION": "~4",
+    "AzureWebJobsSecretStorageType": "files",
+    "MongoDBConnString": "mongodb://hungntt:XgqdsudHAy75obb996WHL7YZWErhjCtOL9byV6ZjI2q2ZZuhQKJAIDZ3C8Zhf1uFYrpJp3b8d9X4ACDbmQe7BQ==@hungntt.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@hungntt@",
+    "MongoDBName": "hungntt-db",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "0afc797b-1daa-4eec-af61-c84f26b06f10",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=0afc797b-1daa-4eec-af61-c84f26b06f10;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/",
+    "EventHubConnString":"Endpoint=sb://hungntt-nsp.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=wAYMj/3mS2k8kl+1VA/hic66IA0blqvje+AEhAFbCTg="
   },
-  "ConnectionStrings": {},
-
-  "AzureWebJobsStorage": ""
+  "ConnectionStrings": {}
 }
